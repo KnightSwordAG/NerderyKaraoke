@@ -23,6 +23,8 @@ namespace NerderyKaraoke.UI
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+			app.MapSignalR();
 		}
 	}
 }

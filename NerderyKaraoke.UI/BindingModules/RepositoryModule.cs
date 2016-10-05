@@ -23,6 +23,11 @@ namespace NerderyKaraoke.UI.BindingModules
 			builder.RegisterType<SongRequestManager>()
 				.As<ISongRequestManager>()
 				.InstancePerRequest();
+
+			builder.RegisterType<CommunicationHub>()
+				.As<ICommunicationHub>()
+				.SingleInstance();
+		
 		}
 	}
 }
