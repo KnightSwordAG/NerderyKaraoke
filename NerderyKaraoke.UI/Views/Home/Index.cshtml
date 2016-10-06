@@ -4,6 +4,13 @@
 	ViewBag.Title = "Home Page";
 }
 
+@section scripts{
+
+	<script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+	<script src="~/signalr/hubs"></script>
+}
+
+
 <h2>Singers and Songs</h2>
 
 @if (Model.Any())
