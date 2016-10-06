@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using AutoMapper;
 
 using Microsoft.AspNet.SignalR;
@@ -31,7 +26,6 @@ namespace NerderyKaraoke.Core.Services
 		public void Update()
 		{
 			var songRequests = _songRequestManager.GetAll();
-			//return _mapper.Map<IEnumerable<SongRequest>, IEnumerable<SongRequestViewModel>>(songRequests);
 			Clients.All.broadcastUpdate(songRequests);
 		}
 

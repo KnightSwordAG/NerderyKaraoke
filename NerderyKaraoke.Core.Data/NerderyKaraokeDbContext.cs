@@ -5,7 +5,7 @@ using NerderyKaraoke.Core.Data.Models;
 namespace NerderyKaraoke.Core.Data
 {
 
-	public partial class NerderyKaraokeDbContext : DbContext
+	public class NerderyKaraokeDbContext : DbContext
 	{
 		static NerderyKaraokeDbContext()
 		{
